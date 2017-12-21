@@ -1,7 +1,10 @@
 "use strict";
 
 module.exports = function () {
-  return function () {
-    return true
+  var factory = function Path(path, name) {
+    this.name = name;
+    this.path = path;
   };
+  
+  return factory;
 };
