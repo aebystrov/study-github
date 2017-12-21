@@ -1,10 +1,17 @@
 "use strict";
 
-module.exports = function () {
-  var factory = function Path(path, name) {
-    this.name = name;
-    this.path = path;
-  };
-  
-  return factory;
+module.exports = function (spec) {
+
+  return new Factory(spec);
 };
+
+function Factory(spec) {
+  let factory = function (path) {
+    return true;
+  };
+
+  factory.isValid =  function (path) {
+    return path in spec;
+  };
+  return factory;
+}
