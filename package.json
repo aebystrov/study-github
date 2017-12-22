@@ -1,0 +1,20 @@
+{
+  "name": "pathlib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdoc": "^3.5.5",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "logger": "0.0.1",
+    "spec-js": "^1.0.0"
+  }
+}
