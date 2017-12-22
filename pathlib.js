@@ -73,6 +73,10 @@ function PathObject(spec, path) {
       return value;
     }
   });
+
+  this.toString = function () {
+    return 'string';
+  }
 }
 
 
